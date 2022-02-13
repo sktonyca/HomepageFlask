@@ -8,5 +8,6 @@ RUN apt update
 RUN apt -y install python3 python3-pip
 # Install Dependencies
 WORKDIR /app
+EXPOSE 5000/tcp
 RUN pip install -r requirements.txt
 CMD ["flask" , "run"]
