@@ -10,4 +10,4 @@ RUN apt -y install python3 python3-pip
 WORKDIR /app
 RUN pip install -r requirements.txt
 EXPOSE 5000/tcp
-CMD python3 app.py
+CMD flask run
