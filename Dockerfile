@@ -10,4 +10,4 @@ RUN apt -y install python3 python3-pip
 WORKDIR /app
 EXPOSE 5000/tcp
 RUN pip install -r requirements.txt
-CMD ["flask" , "run"]
+CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
